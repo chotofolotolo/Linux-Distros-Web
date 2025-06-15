@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Distribuciones de Linux y Comandos</title>
+  <link rel="stylesheet" href="./css/header.css">
+</head>
+
+<body>
+
+  <!---HEADER--->
+  <header>
+
+    <div class="header-container">
+
+      <div class="header-box-logo">
+        <img src="./images/linux-logo.png" alt="header-box-logo">
+      </div>
+
+    </div>
+
+  </header>
+  <!---HEADER--->
+    
+  <!----MAIN---->
+
+  <main>
+    <section class="banner">
+      <div class="banner-text">
+        Linux® es un sistema operativo (SO) open source que creó Linus Torvalds en 1991. Gracias a su comunidad internacional de aficionados, hoy podemos encontrarlo en todo tipo de dispositivos, desde sistemas de puntos de venta hasta las supercomputadoras más potentes del mundo. 
+        <div class="banner-text-btn">
+          <button>Leer mas</button>
+        </div>
+      </div>
+
+      <div class="banner-logo">
+        <img src="./images/computadora-linux.png" alt="computadora-linux">
+      </div>
+
+    </section>
+
+    <section>
+      <!--Las distribuciones(despues hacemos subpaginas para que te pongo informacion mas especifica)-->
+      <h2>Principales Distribuciones de Linux</h2>
+      <ul class="distribuciones">
+        <li><a id="ubuntu" class="button-linux">Ubuntu:</a> Ideal para principiantes, basada en Debian.</li>
+        <li><a id="debian" class="button-linux">Debian:</a> Muy estable, usada como base para otras distros.</li>
+        <li><a id="fedora" class="button-linux">Fedora:</a> Patrocinada por Red Hat, incluye software más reciente.</li>
+        <li><a id="arch" class="button-linux">Arch Linux:</a> Para usuarios avanzados que quieren configurar todo desde
+          cero.</li>
+        <li><a id="mint" class="button-linux">Linux Mint:</a> Basada en Ubuntu, muy amigable para el usuario.</li>
+        <li><a id="kali" class="button-linux">Kali Linux:</a> Orientada a pruebas de seguridad y hacking ético.</li>
+      </ul>
+      <!--fin ditribuciones-linux-->
+    </section>
+  </main>
+  <!----MAIN---->
+
+  <!--Comandos-linux(no van a estar aca, van a estar dentro de las distribuciones)-->
+  <h2>Comandos Básicos de Linux</h2>
+
+  <div class="comando">
+    <strong>ls</strong> - Lista los archivos y carpetas en el directorio actual.<br>
+    <code>ls</code>
+  </div>
+
+  <div class="comando">
+    <strong>cd</strong> - Cambia de directorio.<br>
+    <code>cd /home/usuario</code>
+  </div>
+
+  <div class="comando">
+    <strong>pwd</strong> - Muestra la ruta del directorio actual.<br>
+    <code>pwd</code>
+  </div>
+
+  <div class="comando">
+    <strong>mkdir</strong> Crea un nuevo directorio.<br>
+    <code>mkdir nueva_carpeta</code>
+  </div>
+
+  <div class="comando">
+    <strong>rm</strong> Elimina archivos o directorios.<br>
+    <code>rm archivo.txt</code>
+  </div>
+
+  <div class="comando">
+    <strong>sudo</strong> Ejecuta un comando como superusuario.<br>
+    <code>sudo apt update</code>
+  </div>
+
+  <div class="comando">
+    <strong>man</strong> Muestra el manual de un comando.<br>
+    <code>man ls</code>
+  </div>
+  <!--fin Comandos-linux-->
+  <p style="text-align: center;">Estos comandos se escriben en la terminal. Linux es muy potente y flexible, lo que lo
+    hace ideal para muchos tipos de usuarios.</p>
+
+</body>
+
+</html>
