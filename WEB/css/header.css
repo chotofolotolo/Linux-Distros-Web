@@ -39,36 +39,7 @@
  /*======HEADER======*/
 
 
- /*======MAIN======*/
-
- .banner {
-   display: flex;
-   flex-direction:row;
-   column-gap: 70px;
-   width: 1000px;
-   height: 350px;
- }
-
- .banner .banner-text {
-   display: flex;
-   flex-direction: column;
-   row-gap: 80px;
-   padding: 50px;
-   width: 400px;
-   margin-left: 50px;
- }
-
- .banner .banner-logo {
-   display: flex;
-   width: 400px;
-   height: 100%;
- }
-
- .baner-logo img {
-   max-width: 100%;
-   max-height: 100%;
-   object-fit: contain;
- }
+ 
 
  /*======MAIN======*/
 
