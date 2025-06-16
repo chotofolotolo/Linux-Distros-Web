@@ -1,0 +1,43 @@
+/*====Paleta de colores====
+  Dorados(o amarillos){  
+    #d9bf16
+    #dfc63w
+    #e5cd5a
+    #ead473
+    #efdb8b
+    #f3e2a2
+    }
+    
+    Colores oscuros{
+        #121212
+        #282828
+        #3f3f3f
+        #575757
+    #717171
+    #8b8b8b
+
+    #242116
+    #39362b
+    #4f4c42
+    #65635a
+    #7d7d73
+    #96948e
+    }red
+    */
+
+:root {
+    --primary-black: #121212;
+    --primary-grey: #282828;
+    --secondary-grey: #3f3f3f;
+
+    --primary-yellow: #d9bf16;
+    --secondary-yellow: #dfc63e;
+
+    --third-yellow: #e5cd5a;
+
+    --background-color: #282828;
+
+    --font: Arial, sans-serif;
+}
+
+/*====Paleta de colores====*/
