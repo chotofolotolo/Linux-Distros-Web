@@ -38,6 +38,38 @@
     --background-color: #282828;
 
     --font: Arial, sans-serif;
+
+    /*DEBIAN*/
+    --background-debian-card: linear-gradient(120deg, grey 50%, white 60%);
+    /*DEBIAN*/
+
+    /*UBUNTU*/
+    --background-ubuntu-card: linear-gradient(120deg, #E95420 50%, white 60%);
+    /*UBUNTU*/
+    
+    /*MINT*/
+    --background-mint-card: linear-gradient(120deg, #4E9A06 50%, white 60%);
+    /*MINT*/
+    
+    /*FEDORA*/
+    --background-fedora-card: linear-gradient(120deg, #305BB5 50%, white 60%);
+    /*FEDORA*/
+    
+    /*ARCH*/
+    --background-arch-card: linear-gradient(120deg, #1793D1 50%, white 60%);
+    /*ARCH*/
+    
+    /*MANJARO*/
+    --background-manjaro-card: linear-gradient(120deg, #35BF5C 50%, white 60%);
+    /*MANJARO*/
+    
+    /*KALI*/
+    --background-kali-card: linear-gradient(120deg, #557C9E 50%, white 60%);
+    /*KALI*/
+    
+    /*ZORIN OS*/
+    --background-zorin-card: linear-gradient(120deg, #15A1E6 50%, white 60%);
+    /*ZORIN OS*/
 }
 
 /*====Paleta de colores====*/

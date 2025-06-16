@@ -3,8 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=south"/><!--importe la api pero todavia no esta en uso, la voy a usar para ponerle iconos a las opiones del header-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=south" />
+  <!--importe la api pero todavia no esta en uso, la voy a usar para ponerle iconos a las opiones del header-->
   <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/body.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="shortcut icon" href="./images/linux-logo.png">
@@ -59,21 +62,98 @@
 
     </section>
 
-    <section>
-      <!--Las distribuciones(despues hacemos subpaginas para que te pongo informacion mas especifica)-->
-      <h2>Principales Distribuciones de Linux</h2>
-      <ul class="distribuciones">
-        <li><a id="ubuntu" class="button-linux">Ubuntu:</a> Ideal para principiantes, basada en Debian.</li>
-        <li><a id="debian" class="button-linux">Debian:</a> Muy estable, usada como base para otras distros.</li>
-        <li><a id="fedora" class="button-linux">Fedora:</a> Patrocinada por Red Hat, incluye software más reciente.</li>
-        <li><a id="arch" class="button-linux">Arch Linux:</a> Para usuarios avanzados que quieren configurar todo desde
-          cero.</li>
-        <li><a id="mint" class="button-linux">Linux Mint:</a> Basada en Ubuntu, muy amigable para el usuario.</li>
-        <li><a id="kali" class="button-linux">Kali Linux:</a> Orientada a pruebas de seguridad y hacking ético.</li>
-      </ul>
-      <!--fin ditribuciones-linux-->
+    <section class="distros-cards-container">
+
+      <!--DISTROS-->
+      <div class="distros-column">
+
+        <div class="distro-card">
+
+          <div class="debian-card">
+
+            <h1>
+              Debian
+            </h1>
+
+            <p>
+            </p>
+            <img src="./images/distros-logos/Debian_logo.png" alt="debian-logo">
+          </div>
+
+        </div>
+
+        <div class="distro-card">
+          <div class="ubuntu-card">
+            <h1>
+              ubuntu
+            </h1>
+            <img src="./images/distros-logos/Ubuntu_logo.png" alt="ubuntu-logo">
+          </div>
+        </div>
+
+        <div class="distro-card">
+          <div class="mint-card">
+            <h1>
+              Mint
+            </h1>
+            <img src="./images/distros-logos/Mint_logo.png" alt="mint-logo">
+          </div>
+        </div>
+
+        <div class="distro-card">
+          <div class="fedora-card">
+            <h1>
+              Fedora
+            </h1>
+            <img src="./images/distros-logos/Fedora_logo.png" alt="fedora-logo">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="distros-column">
+        <div class="distro-card">
+          <div class="arch-card">
+            <h1>
+              Arch
+            </h1>
+            <img src="./images/distros-logos/Arch_logo.png" alt="arch-logo">
+          </div>
+        </div>
+
+        <div class="distro-card">
+          <div class="manjaro-card">
+            <h1>
+              Manjaro
+            </h1>
+            <img src="./images/distros-logos/Manjaro_logo.png" alt="manjaro-logo">
+          </div>
+        </div>
+
+        <div class="distro-card">
+          <div class="kali-card">
+            <h1>
+              Kali
+            </h1>
+            <img src="./images/distros-logos/kali_logo.png" alt="kali-logo">
+          </div>
+        </div>
+
+        <div class="distro-card">
+          <div class="zorin-card">
+            <h1>
+              Zorin Os
+            </h1>
+            <img src="./images/distros-logos/zorin_logo.png" alt="zorin-logo">
+          </div>
+        </div>
+      </div>
+
     </section>
+    <!--fin ditribuciones-linux-->
   </main>
+
+  <br><br><br><br><br><br>
   <!----MAIN---->
 
   <!--Comandos-linux(no van a estar aca, van a estar dentro de las distribuciones)-->

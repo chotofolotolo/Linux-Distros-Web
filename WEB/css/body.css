@@ -1,0 +1,12 @@
+/*====BODY====*/
+body {
+    /*Box model*/
+    margin: 0;
+    margin-top: 170px;
+
+    /*Styles*/
+    font-family: var(--font);
+    background-color: var(--background-color);
+}
+
+/*====BODY====*/

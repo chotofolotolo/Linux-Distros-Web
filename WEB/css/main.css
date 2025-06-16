@@ -55,7 +55,6 @@ h1 {
   background-color: transparent;
   border-radius: 5px;
   border: solid white 2px;
-
   transition: 0.5s;
 }
 
@@ -92,5 +91,247 @@ h1 {
 .options {
   cursor: pointer;
 }
+
+/*======DISTROS-CARDS======*/
+
+.distros-cards-container {
+  /*Box model*/
+  width: 1220px;
+  height: 950px;
+  margin-top: 100px;
+  margin-left: 60px;
+
+  /*Layout*/
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  /*Styles*/
+}
+
+.distros-column {
+  /*Box model*/
+  width: 600px;
+  height: 100%;
+
+  /*Layout*/
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  /*Styles*/
+}
+
+.distro-card {
+  /*Box model*/
+  height: 350px;
+  /*Styles*/
+  color: white;
+  /*border: solid white 1px;*/
+}
+
+.debian-card {
+  /*Box model*/
+  height: 100%;
+  width: 100%;
+
+  /*Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*Alineamiento vertical*/
+
+  /*Styles*/
+  background: var(--background-debian-card);
+  border-radius: 15px;
+}
+
+.debian-card img {
+  /*Box model*/
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.ubuntu-card {
+  /*Box model*/
+  height: 100%;
+  width: 100%;
+
+  /*Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*Alineamiento vertical*/
+
+  /*Styles*/
+  border-radius: 15px;
+  background: var(--background-ubuntu-card);
+}
+
+.ubuntu-card img {
+  /*Box model*/
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+
+  /*Styles*/
+}
+
+.mint-card {
+  /*Box model*/
+  height: 100%;
+  width: 100%;
+
+  /*Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*Alineamiento vertical*/
+
+  /*Styles*/
+  border-radius: 15px;
+  background: var(--background-mint-card);
+}
+
+.mint-card img {
+  /*Box model*/
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+
+  /*Styles*/
+}
+
+.fedora-card {
+  /*Box model*/
+  height: 100%;
+  width: 100%;
+
+  /*Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*Alineamiento vertical*/
+
+  /*Styles*/
+  border-radius: 15px;
+  background: var(--background-fedora-card);
+
+}
+
+.fedora-card img {
+  /*Box model*/
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+
+  /*Styles*/
+}
+
+.arch-card {
+  /*Box model*/
+  height: 100%;
+  width: 100%;
+
+  /*Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*Alineamiento vertical*/
+
+  /*Styles*/
+  border-radius: 15px;
+  background: var(--background-arch-card);
+}
+
+.arch-card img {
+  /*Box model*/
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+
+  /*Styles*/
+}
+
+.manjaro-card {
+  /*Box model*/
+  height: 100%;
+  width: 100%;
+
+  /*Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*Alineamiento vertical*/
+
+  /*Styles*/
+  border-radius: 15px;
+  background: var(--background-manjaro-card);
+}
+
+.manjaro-card img {
+  /*Box model*/
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+
+  /*Styles*/
+}
+
+.kali-card {
+  /*Box model*/
+  height: 100%;
+  width: 100%;
+
+  /*Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*Alineamiento vertical*/
+
+  /*Styles*/
+  border-radius: 15px;
+  background: var(--background-kali-card);
+}
+
+.kali-card img {
+  /*Box model*/
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+
+  /*Styles*/
+}
+
+.zorin-card {
+  /*Box model*/
+  height: 100%;
+  width: 100%;
+
+  /*Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*Alineamiento vertical*/
+
+  /*Styles*/
+  border-radius: 15px;
+  background: var(--background-zorin-card);
+
+}
+
+.zorin-card img {
+  /*Box model*/
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+
+  /*Styles*/
+
+}
+
+
+
+/*======DISTROS-CARDS======*/
 
 /*======MAIN======*/
