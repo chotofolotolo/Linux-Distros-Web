@@ -79,19 +79,6 @@ h1 {
   filter: invert(7%);
 }
 
-.header-container-options {
-  display: flex;
-  margin-top: 45px;
-  margin-left: 550px;
-  column-gap: 100px;
-  color: white;
-  font-size: 30px;
-}
-
-.options {
-  cursor: pointer;
-}
-
 /*======DISTROS-CARDS======*/
 
 .distros-cards-container {
