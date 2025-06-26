@@ -1,78 +1,68 @@
-/*======MAIN======*/
 * {
   font-family: var(--font);
 }
 
-.banner {
-  /*Box model*/
-  width: 1200px;
-  height: 450px;
-  margin-top: 10px;
-  margin-left: 60px;
+html {
+  scroll-behavior: smooth;
+}
 
-  /*Layout*/
+/*======MAIN======*/
+
+.banner {
+  width: 75rem;         /* 1200px */
+  height: 28.125rem;     /* 450px */
+  margin-top: 0.625rem;  /* 10px */
+  margin-left: 3.75rem;  /* 60px */
+
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  column-gap: 10px;
+  column-gap: 0.625rem;  /* 10px */
 
-  /*Styles*/
   background: linear-gradient(120deg, #000 0%, var(--secondary-grey) 100%);
-  box-shadow: 0 2px 10px #000;
-  border-radius: 15px;
-
+  box-shadow: 0 0.125rem 0.625rem #000; /* 2px 10px */
+  border-radius: 0.9375rem; /* 15px */
 }
 
 .banner .banner-text p,
 h1 {
-  /*Box model*/
-  width: 400px;
-  font-size: 23px;
+  width: 25rem;          /* 400px */
+  font-size: 1.4375rem;  /* 23px */
 
-  /*Layout*/
   display: flex;
   flex-direction: column;
-  row-gap: 80px;
-  margin-left: 50px;
-  word-spacing: 5px;
+  row-gap: 5rem;         /* 80px */
+  margin-left: 3.125rem; /* 50px */
+  word-spacing: 0.3125rem; /* 5px */
 
-  /*Styles*/
   color: white;
 }
 
 .banner-text-btn {
-  /*Box model*/
-  width: 270px;
-  height: 60px;
+  width: 16.875rem;       /* 270px */
+  height: 3.75rem;        /* 60px */
+  margin-left: 3.125rem;  /* 50px */
 
-  /*Layout*/
-  margin-left: 50px;
-
-  /*Styles*/
-  font-size: 23px;
+  font-size: 1.4375rem;   /* 23px */
   color: white;
   cursor: pointer;
   background-color: transparent;
-  border-radius: 5px;
-  border: solid white 2px;
-  transition: 0.5s;
+  border-radius: 0.3125rem; /* 5px */
+  border: none;
+  transition: all 1.5s;
 }
 
 .banner-text-btn:hover {
-  transition: 0.5s;
-  background-color: var(--primary-yellow);
-  border: none
+  color: var(--primary-yellow);
 }
 
 .banner .banner-logo {
-  /*Box model*/
   display: flex;
-  width: 300px;
+  width: 18.75rem;       /* 300px */
   height: 100%;
 }
 
 .banner-logo img:last-child {
-  /*Box model*/
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -82,243 +72,93 @@ h1 {
 /*======DISTROS-CARDS======*/
 
 .distros-cards-container {
-  /*Box model*/
-  width: 1220px;
-  height: 950px;
-  margin-top: 100px;
-  margin-left: 60px;
+  width: 76.25rem;       /* 1220px */
+  height: 59.375rem;     /* 950px */
+  margin-top: 6.25rem;   /* 100px */
+  margin-left: 3.75rem;  /* 60px */
 
-  /*Layout*/
   display: flex;
   flex-direction: row;
-  column-gap: 30px;
-  /*Styles*/
+  column-gap: 1.875rem;  /* 30px */
 }
 
 .distros-column {
-  /*Box model*/
-  width: 600px;
+  width: 37.5rem;        /* 600px */
   height: 100%;
 
-  /*Layout*/
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
-  /*Styles*/
+  row-gap: 2.5rem;       /* 40px */
 }
 
 .distro-card {
-  /*Box model*/
-  height: 350px;
-  /*Styles*/
+  height: 21.875rem;     /* 350px */
   color: white;
-  /*border: solid white 1px;*/
+}
+
+.debian-card,
+.ubuntu-card,
+.mint-card,
+.fedora-card,
+.arch-card,
+.manjaro-card,
+.kali-card,
+.zorin-card {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0.9375rem; /* 15px */
 }
 
 .debian-card {
-  /*Box model*/
-  height: 100%;
-  width: 100%;
-
-  /*Layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /*Alineamiento vertical*/
-
-  /*Styles*/
   background: var(--background-debian-card);
-  border-radius: 15px;
 }
-
-.debian-card img {
-  /*Box model*/
-  width: 130px;
-  height: auto;
-  object-fit: contain;
-}
-
 
 .ubuntu-card {
-  /*Box model*/
-  height: 100%;
-  width: 100%;
-
-  /*Layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /*Alineamiento vertical*/
-
-  /*Styles*/
-  border-radius: 15px;
   background: var(--background-ubuntu-card);
 }
 
-.ubuntu-card img {
-  /*Box model*/
-  width: 130px;
-  height: auto;
-  object-fit: contain;
-
-  /*Styles*/
-}
-
 .mint-card {
-  /*Box model*/
-  height: 100%;
-  width: 100%;
-
-  /*Layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /*Alineamiento vertical*/
-
-  /*Styles*/
-  border-radius: 15px;
   background: var(--background-mint-card);
 }
 
-.mint-card img {
-  /*Box model*/
-  width: 130px;
-  height: auto;
-  object-fit: contain;
-
-  /*Styles*/
-}
-
 .fedora-card {
-  /*Box model*/
-  height: 100%;
-  width: 100%;
-
-  /*Layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /*Alineamiento vertical*/
-
-  /*Styles*/
-  border-radius: 15px;
   background: var(--background-fedora-card);
-
-}
-
-.fedora-card img {
-  /*Box model*/
-  width: 130px;
-  height: auto;
-  object-fit: contain;
-
-  /*Styles*/
 }
 
 .arch-card {
-  /*Box model*/
-  height: 100%;
-  width: 100%;
-
-  /*Layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /*Alineamiento vertical*/
-
-  /*Styles*/
-  border-radius: 15px;
   background: var(--background-arch-card);
 }
 
-.arch-card img {
-  /*Box model*/
-  width: 130px;
-  height: auto;
-  object-fit: contain;
-
-  /*Styles*/
-}
-
 .manjaro-card {
-  /*Box model*/
-  height: 100%;
-  width: 100%;
-
-  /*Layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /*Alineamiento vertical*/
-
-  /*Styles*/
-  border-radius: 15px;
   background: var(--background-manjaro-card);
 }
 
-.manjaro-card img {
-  /*Box model*/
-  width: 130px;
-  height: auto;
-  object-fit: contain;
-
-  /*Styles*/
-}
-
 .kali-card {
-  /*Box model*/
-  height: 100%;
-  width: 100%;
-
-  /*Layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /*Alineamiento vertical*/
-
-  /*Styles*/
-  border-radius: 15px;
   background: var(--background-kali-card);
 }
 
-.kali-card img {
-  /*Box model*/
-  width: 200px;
-  height: auto;
-  object-fit: contain;
-
-  /*Styles*/
-}
-
 .zorin-card {
-  /*Box model*/
-  height: 100%;
-  width: 100%;
-
-  /*Layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /*Alineamiento vertical*/
-
-  /*Styles*/
-  border-radius: 15px;
   background: var(--background-zorin-card);
-
 }
 
-.zorin-card img {
-  /*Box model*/
-  width: 200px;
+.debian-card img,
+.ubuntu-card img,
+.mint-card img,
+.fedora-card img,
+.arch-card img,
+.manjaro-card img {
+  width: 8.125rem;        /* 130px */
   height: auto;
   object-fit: contain;
-
-  /*Styles*/
-
 }
 
-
-
-/*======DISTROS-CARDS======*/
-
-/*======MAIN======*/
+.kali-card img,
+.zorin-card img {
+  width: 12.5rem;         /* 200px */
+  height: auto;
+  object-fit: contain;
+}
