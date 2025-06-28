@@ -2,7 +2,7 @@
 
 header {
   /*Box model*/
-  height: 120px;
+  height: 4.5rem;
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -23,37 +23,44 @@ header {
 
 .header-container-options {
   display: flex;
-  margin-top: 45px;
-  margin-left: 550px;
-  column-gap: 100px;
+  margin-top: 1.1875rem;    /* 1.9rem ~= 30.4px (quedó igual) */
+  margin-left: 62%;         /* sin cambio: ya es en % */
+  column-gap: 4rem;         /* ya está en rem */
   color: white;
-  font-size: 30px;
+  font-size: 1.2rem;
 }
 
 .options {
-  cursor: pointer;
+  color: white;
+  transition: 0.5s all;
+}
+
+.options:hover {
+  color: var(--secondary-grey);
+}
+
+a {
+  text-decoration: none;
 }
 
 .header-box-logo {
   /*Box model*/
-  width: 80px;
+  width: 3rem;
   height: 100%;
 
   /*Layout*/
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 50px;
-
+  margin-left: 3.125rem;   /* 50px */
 }
 
 .header-box-logo img {
   /*Box model*/
-
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  /*Mantiene la proporcion de la imagen*/
+  /*Mantiene la proporción de la imagen*/
 }
 
 /*======HEADER======*/
