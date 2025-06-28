@@ -21,6 +21,19 @@ header {
   display: flex;
 }
 
+.header-container-options {
+  display: flex;
+  margin-top: 45px;
+  margin-left: 550px;
+  column-gap: 100px;
+  color: white;
+  font-size: 30px;
+}
+
+.options {
+  cursor: pointer;
+}
+
 .header-box-logo {
   /*Box model*/
   width: 80px;

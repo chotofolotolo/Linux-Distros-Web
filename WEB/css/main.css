@@ -54,14 +54,12 @@ h1 {
   cursor: pointer;
   background-color: transparent;
   border-radius: 5px;
-  border: solid white 2px;
-  transition: 0.5s;
+  border: none;
+  transition: all 0.1s;
 }
 
 .banner-text-btn:hover {
-  transition: 0.5s;
   background-color: var(--primary-yellow);
-  border: none
 }
 
 .banner .banner-logo {
@@ -77,19 +75,6 @@ h1 {
   max-height: 100%;
   object-fit: contain;
   filter: invert(7%);
-}
-
-.header-container-options {
-  display: flex;
-  margin-top: 45px;
-  margin-left: 550px;
-  column-gap: 100px;
-  color: white;
-  font-size: 30px;
-}
-
-.options {
-  cursor: pointer;
 }
 
 /*======DISTROS-CARDS======*/
@@ -330,8 +315,31 @@ h1 {
 
 }
 
-
-
 /*======DISTROS-CARDS======*/
+
+/*======INFO-LINUX======*/
+
+.linux-information-container {
+  border: solid white 2px;
+  height: 550px;
+  width: 1200px;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+.linux-information-tittle {
+  border: white solid 2px;
+}
+
+.linux-information-body {
+  padding: 20px;
+  color: white;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+/*======INFO-LINUX======*/
+
+
 
 /*======MAIN======*/
