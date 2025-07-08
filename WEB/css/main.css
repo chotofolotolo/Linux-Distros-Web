@@ -13,7 +13,7 @@ html {
   /* 1200px */
   height: 28.125rem;
   /* 450px */
-  margin-top: 0.625rem;
+  margin-top: 0.425rem;
   /* 10px */
   margin-left: 3.75rem;
   /* 60px */
@@ -184,34 +184,6 @@ h1 {
   object-fit: contain;
 }
 
-/*======DISTROS-CARDS======*/
-
-/*======INFO-LINUX======*/
-
-.linux-information-container {
-  border: solid white 2px;
-  height: 550px;
-  width: 1200px;
-  margin-top: 60px;
-  margin-left: 60px;
-}
-
-.linux-information-tittle {
-  border: white solid 2px;
-}
-
-.linux-information-body {
-  padding: 20px;
-  color: white;
-  font-size: 25px;
-  line-height: 40px;
-}
-
-/*======INFO-LINUX======*/
-
-
-
-/*======MAIN======*/
 .kali-card img,
 .zorin-card img {
   width: 12.5rem;
@@ -219,3 +191,68 @@ h1 {
   height: auto;
   object-fit: contain;
 }
+
+/*======DISTROS-CARDS======*/
+
+/*======INFO-LINUX======*/
+
+.info-linux {
+  width: 1200px;
+  height: 580px;
+  margin-left: 50px;
+  margin-top: 80px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0.125rem 0.625rem #000;
+  border-radius: 15px;
+}
+
+.info-linux h2 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.info-linux p {
+  font-size: 18px;
+  color: #cccccc;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.info-cards {
+  display: flex;
+  width: 1200px;
+  height: 300px;
+  padding: 20px;
+  gap: 10px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  width: 380px;
+  height: 350px;
+  box-shadow: 0 0 2px var(--primary-yellow);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 20px;
+  color: white;
+  padding: 2px;
+}
+
+/*======INFO-LINUX======*/
+
+/*======MAIN======*/
