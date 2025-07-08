@@ -120,6 +120,12 @@ h1 {
   height: 21.875rem;
   /* 350px */
   color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.distro-card:hover{
+    transform: translateY(-10px);
 }
 
 .debian-card,

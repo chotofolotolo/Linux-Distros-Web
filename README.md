@@ -1,3 +1,6 @@
 # Linux-Distros-Web
 # Pagina informativa sobre las diferentes distribuciones de linux más populares
-# seccion "informacion sobre linux" agregada
+# CAMBIOS MAS SIGNIFICATIVOS->{
+# carpeta Subpages añadida,para las subpaginas
+# ahora las cards-distros funcionan como botones
+# cargan su respectiva pagina}
