@@ -2,7 +2,7 @@
 
 header {
   /*Box model*/
-  height: 4.5rem;
+  height: 3.5rem;
   width: 100%;
   position: fixed;
   z-index: 1000;
