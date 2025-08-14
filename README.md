@@ -6,4 +6,5 @@
 # cargan su respectiva pagina
 # IMPORTANTE{
 #    ¡Cambiar los transition all por los normales 1 por 1, porque cuando cargas la pagina aparece la animacion que   queda mal!
-#    ¡La mala practica de las secciones con ID para mandarte a las distrubuciones!}} 
+#    ¡La mala practica de las secciones con ID para mandarte a las distrubuciones!
+#    Hacer la pagina mas chiquita y mas intuitiva(no se como se escribe)}} 
