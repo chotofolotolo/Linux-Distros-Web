@@ -2,14 +2,16 @@
 
 header {
   /*Box model*/
-  height: 3.5rem;
+  height: 4.2rem;
   width: 100%;
   position: fixed;
   z-index: 1000;
   top: 0;
 
   /*Styles*/
-  background: linear-gradient(175deg, #000 2%, #333 100%);
+  background-color: #333;
+  box-shadow: 0 0.13rem 0.50rem #333;
+
 }
 
 .header-container {
@@ -53,9 +55,8 @@ a {
 
   /*Layout*/
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-left: 3.125rem;
+  margin-left: 2.125rem;
   /* 50px */
 }
 

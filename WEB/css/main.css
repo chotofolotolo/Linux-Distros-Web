@@ -9,13 +9,11 @@ html {
 /*======MAIN======*/
 
 .banner {
-  width: 82rem;
+  width: 1350px;
   /* 1200px */
   height: 32.0rem;
   /* 450px */
-  margin-top: 0.325rem;
   /* 10px */
-  margin-left: 0.90rem;
   /* 60px */
 
   display: flex;
@@ -24,10 +22,8 @@ html {
   column-gap: 0.625rem;
   /* 10px */
 
-  background: linear-gradient(120deg, #000 0%, var(--secondary-grey) 100%);
   box-shadow: 0 0.125rem 0.625rem #000;
   /* 2px 10px */
-  border-radius: 0.9375rem;
   /* 15px */
 }
 
@@ -89,16 +85,23 @@ h1 {
 
 /*======DISTROS-CARDS======*/
 
+.distros-cards-tittle {
+  margin-top: 40px;
+  margin-left: 12px;
+}
+
+.distros-cards-tittle h1 {
+  width: 880px;
+  font-size: 30px;
+}
+
 .distros-cards-container {
   width: 76.25rem;
   /* 1220px */
   height: 59.375rem;
   /* 950px */
-  margin-top: 6.25rem;
-  /* 100px */
   margin-left: 3.75rem;
   /* 60px */
-
   display: flex;
   flex-direction: row;
   column-gap: 1.875rem;
@@ -109,7 +112,6 @@ h1 {
   width: 37.5rem;
   /* 600px */
   height: 100%;
-
   display: flex;
   flex-direction: column;
   row-gap: 2.5rem;
@@ -124,8 +126,8 @@ h1 {
   transition: transform 0.2s ease;
 }
 
-.distro-card:hover{
-    transform: translateY(-10px);
+.distro-card:hover {
+  transform: translateY(-10px);
 }
 
 .debian-card,
@@ -201,67 +203,250 @@ h1 {
 /*======DISTROS-CARDS======*/
 
 /*======INFO-LINUX======*/
-/*======INFO-LINUX======*/
 
 .info-linux {
-  width: 78.13rem;       /* 1250px */
-  height: 36.25rem;      /* 580px */
-  margin-left: 1.13rem;  /* 18px */
-  margin-top: 5rem;      /* 80px */
-  padding: 1.88rem;      /* 30px */
+  width: 78.13rem;
+  /* 1250px */
+  height: 36.25rem;
+  /* 580px */
+  margin-left: 1.13rem;
+  /* 18px */
+  margin-top: 5rem;
+  /* 80px */
+  padding: 1.88rem;
+  /* 30px */
   text-align: center;
-  box-shadow: 0 0.13rem 0.63rem #000; /* 2px 10px */
-  border-radius: 0.94rem; /* 15px */
 }
 
-.info-linux h2 {
-  font-size: 2.25rem;     /* 36px */
+.info-linux-tittle h2 {
+  font-size: 2.25rem;
+  text-align: start;
   color: white;
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem;
+  margin-left: 30px;
 }
 
 .info-linux p {
-  font-size: 1.13rem;     /* 18px */
+  font-size: 1.13rem;
+  /* 18px */
   color: #cccccc;
-  margin-bottom: 2.5rem;  /* 40px */
+  margin-bottom: 2.5rem;
+  /* 40px */
+  text-align: start;
   line-height: 1.6;
 }
 
 .info-cards {
   display: flex;
-  width: 75rem;           /* 1200px */
-  height: 18.75rem;       /* 300px */
-  padding: 1.25rem;       /* 20px */
-  gap: 1.25rem;           /* 20px */
+  width: 75rem;
+  /* 1200px */
+  height: 18.75rem;
+  /* 300px */
+  padding: 1.25rem;
+  /* 20px */
+  gap: 1.25rem;
+  /* 20px */
 }
 
 .card {
   background-color: #1a1a1a;
-  border-radius: 0.31rem;   /* 5px */
-  width: 23.75rem;          /* 380px */
-  height: 21.88rem;         /* 350px */
-  box-shadow: 0 0 0.13rem var(--primary-yellow); /* 2px */
+  border-radius: 0.31rem;
+  /* 5px */
+  width: 23.75rem;
+  /* 380px */
+  height: 21.88rem;
+  /* 350px */
+  /* 2px */
   transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-0.31rem); /* 5px */
 }
 
 .card h3 {
   color: white;
-  margin-bottom: 0.63rem;   /* 10px */
-  font-size: 1.25rem;       /* 20px */
+  margin-bottom: 0.63rem;
+  /* 10px */
+  font-size: 1.25rem;
+  /* 20px */
 }
 
 .card p {
-  font-size: 1.25rem;       /* 20px */
+  font-size: 1.25rem;
+  /* 20px */
   color: white;
-  padding: 0.13rem;         /* 2px */
+  padding: 0.13rem;
+  text-align: center;
 }
 
 /*======INFO-LINUX======*/
 
-/*======INFO-LINUX======*/
+/*======COMANDOS BASICOS LINUX======*/
 
-/*======MAIN======*/
+.basic-commands {
+  display: flex;
+  flex-direction: column;
+  width: 78.13rem;
+  /* 1250px */
+  height: 36.25rem;
+  /* 580px */
+  margin-left: 1.13rem;
+  /* 18px */
+  margin-top: 5rem;
+  /* 80px */
+  padding: 1.88rem;
+  /* 30px */
+  /* 2px 10px */
+  border-radius: 0.94rem;
+  /* 15px */
+}
+
+.command {
+  color: white;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.command:hover {
+  box-shadow: 0 0.13rem 0.63rem #000;
+  cursor: pointer;
+}
+
+.command-body {
+  padding: 20px;
+  color: white;
+  display: none;
+}
+
+.command-body img {
+  max-width: 50rem;
+}
+
+.command:active {
+  .command-body {
+    display: block;
+  }
+}
+
+
+/*======COMANDOS BASICOS LINUX======*/
+
+/*======FOOTER======*/
+
+footer {
+    margin-left: 5%;
+    margin-top: 40%;
+    border: solid red 1px;
+  }
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    width: 1150px;
+    height: 100px;
+}
+
+.titulo-footer {
+    width: 1063px;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: 1000;
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 320px;
+}
+
+.column-tittle {
+    color: white;
+    text-align: start;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.block-info {
+    margin-top: 10px;
+}
+
+.container-footer p {
+    color: #9197a6;
+    margin-top: 5px;
+    line-height: 25px;
+    font-size: 17px;
+    font-weight: 450;
+}
+
+.info-box {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    color: #9197a6;
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.info-box .material-symbols-outlined {
+    color: #9197a6;
+}
+
+.info-box:hover {
+    color: #007bff;
+
+    .material-symbols-outlined {
+        color: #007bff;
+        transition: all 0.5s;
+    }
+}
+
+.columns input[type="text"] {
+    width: 240px;
+    height: 25px;
+    background-color: transparent;
+    border: solid white 2px;
+    outline: none;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.columns input[type="submit"] {
+    cursor: pointer;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: solid white 3px;
+    margin-top: 20px;
+    font-size: 17px;
+    transition: all 0.5s;
+}
+
+.columns input[type="submit"]:hover {
+    background-color: gold;
+    border-color: gold;
+}
+
+.copyrigth {
+    width: 1125px;
+    margin-left: 3%;
+    margin-top: 20%;
+    margin-bottom: 2%;
+    border-top: solid grey 1px;
+    text-align: center;
+}
+
+.copyrigth p {
+    margin-top: 20px;
+}
+
+
+/*======FOOTER======*/
