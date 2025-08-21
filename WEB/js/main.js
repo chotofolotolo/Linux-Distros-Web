@@ -32,3 +32,5 @@ function distroClick(element) {
     console.log("Distro->",NAME);//solo para debug
 
 }
+
+
