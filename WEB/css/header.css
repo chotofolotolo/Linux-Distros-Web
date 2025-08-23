@@ -1,17 +1,48 @@
 /*======HEADER======*/
+@media (max-width: 1366px) {/*Laptops/PCs*/
+  header {
+    /*Box model*/
+    height: 4.2rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
 
-header {
-  /*Box model*/
-  height: 4.2rem;
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
+    /*Styles*/
+    background-color: #333;
+    box-shadow: 0 0.13rem 0.50rem #333;
 
-  /*Styles*/
-  background-color: #333;
-  box-shadow: 0 0.13rem 0.50rem #333;
+  }
+}
 
+@media (max-width: 768px) {/*Ponele que tabletas*/
+  header {
+    /*Box model*/
+    height: 4.2rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    /*Styles*/
+    background-color: red;
+    box-shadow: 0 0.13rem 0.50rem #333;
+
+  }
+}
+
+@media (max-width: 480px) {/*Ponele que celulares*/
+  header {
+    /*Box model*/
+    height: 4.2rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    /*Styles*/
+    background-color: blue;
+    box-shadow: 0 0.13rem 0.50rem #333;
+
+  }
 }
 
 .header-container {
