@@ -319,8 +319,8 @@ html {
 
 .command:hover {
   box-shadow: 0 0.13rem 0.63rem #000;
-  cursor: pointer;
   transform: translateY(-5px);
+  cursor: pointer;
 
 }
 
@@ -340,6 +340,40 @@ html {
 
 
 /*======COMANDOS BASICOS LINUX======*/
+
+/*======ARROW UPWARD======*/
+
+.arrow-upward {
+  position: fixed;
+  z-index: 1000;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 20px;
+  cursor: pointer;
+  box-shadow: 0 0.13rem 0.63rem #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arrow-upward a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-upward:hover {
+  box-shadow: 0 0.13rem 0.63rem #000;
+  transform: translateY(-5px);
+}
+
+/*======ARROW UPWARD======*/
 
 /* =====FOOTER===== */
 footer {
