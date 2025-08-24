@@ -1,10 +1,10 @@
 # Linux-Distros-Web
-# Pagina informativa sobre las diferentes distribuciones de linux más populares
-# CAMBIOS MAS SIGNIFICATIVOS->{
-# carpeta Subpages añadida,para las subpaginas
-# ahora las cards-distros funcionan como botones
-# cargan su respectiva pagina
-# IMPORTANTE{
-#    ¡Cambiar los transition all por los normales 1 por 1, porque cuando cargas la pagina aparece la animacion que   queda mal!
-#    ¡La mala practica de las secciones con ID para mandarte a las distrubuciones!
-#    Hacer la pagina mas chiquita y mas intuitiva(no se como se escribe)}} 
+# Cambios mas significativos->
+# -Seccion de introduccion "Linuxpedia" añadida
+# -Correcion de mal funcionamiento de "H1s"
+# -Cambio de banner "¿Que es Linux?",y su contenido
+# -Titulos para secciones
+# -Elimine script de redireccion de las distribuciones,quedó simplificado
+# -Seccion "Comandos basicos" actualizada/corregida
+# -Footer menos basofia(sigue siendo una basofia...pero menos)
+# -Directorio "utils",para boludeces

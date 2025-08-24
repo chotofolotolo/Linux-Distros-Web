@@ -1,5 +1,7 @@
 /*======HEADER======*/
-@media (max-width: 1366px) {/*Laptops/PCs*/
+@media (max-width: 1366px) {
+
+  /*Laptops/PCs*/
   header {
     /*Box model*/
     height: 4.2rem;
@@ -11,11 +13,20 @@
     /*Styles*/
     background-color: #333;
     box-shadow: 0 0.13rem 0.50rem #333;
+  }
 
+  header h1 {
+    color: white;
+    font-size: 1.4375rem;
+    margin-left: 3.125rem;
+    /* 50px */
+    word-spacing: 0.3125rem;
   }
 }
 
-@media (max-width: 768px) {/*Ponele que tabletas*/
+@media (max-width: 768px) {
+
+  /*Ponele que tabletas*/
   header {
     /*Box model*/
     height: 4.2rem;
@@ -30,7 +41,9 @@
   }
 }
 
-@media (max-width: 480px) {/*Ponele que celulares*/
+@media (max-width: 480px) {
+
+  /*Ponele que celulares*/
   header {
     /*Box model*/
     height: 4.2rem;

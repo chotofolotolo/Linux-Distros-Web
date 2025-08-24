@@ -1,36 +1,22 @@
-function distroClick(element) {
+document.addEventListener("DOMContentLoaded", () => {//cuando el contenido del documento esta cargado ->
+    const COMMANDS = document.querySelectorAll(".command");//selecciono todos los elementos de la clase command -> nodeList
+    let lastCommand = null;
 
-    const NAME = element.querySelector(".tittle")?.textContent.trim();
+    COMMANDS.forEach(command => {
+        command.addEventListener("click", () => {//añade click listener a cada elemento
+            if (lastCommand != null && lastCommand !== command) {
+                //si lastCommand no es null,y es diferente al actual comando activo, lo remueve
+                lastCommand.classList.remove("command-show");//lo remueve
+            }
+            command.classList.toggle("command-show");//activa descripcion del comando que se clickeo
 
-    switch (NAME) {
-        case "Debian":
-            window.location.href = "/WEB/Subpages/Debian.html";
-            break;
-        case "Ubuntu":
-            window.location.href = "/WEB/Subpages/Ubuntu.html";
-            break;
-        case "Mint":
-            window.location.href = "/WEB/Subpages/Mint.html";
-            break;
-        case "Fedora":
-            window.location.href = "/WEB/Subpages/Fedora.html";
-            break;
-        case "Arch":
-            window.location.href = "/WEB/Subpages/Arch.html";
-            break;
-        case "Manjaro":
-            window.location.href = "/WEB/Subpages/Manjaro.html";
-            break;
-        case "Kali":
-            window.location.href = "/WEB/Subpages/Kali.html";
-            break;
-        case "Zorin Os":
-            window.location.href = "/WEB/Subpages/Zorin.html";
-            break;
-    }
-
-    console.log("Distro->",NAME);//solo para debug
-
-}
-
+            if (command.classList.contains("command-show")) {
+                //guardo el comando un comando activo
+                lastCommand = command;
+            } else {
+                lastCommand = null;
+            }
+        });
+    });
+});
 
