@@ -80,63 +80,65 @@ html {
   max-height: 100%;
   object-fit: contain;
 }
-
-/*======DISTROS-CARDS======*/
-
-.distros-intro {
-  margin-top: 1.5rem;
-  width: 1350px;
-  height: 12.0rem;
+/* El menu*/
+#menu{
+  display:none;
+  max-height: 0;        
+  opacity: 0;           
+  overflow: hidden;     
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 }
-
-.distros-intro .introduct {
-  color: white;
-  font-size: 50px;
-  text-align: center;
-  letter-spacing: 12px;
-  padding: 2rem;
+/*quise hacer una animacion y se rompio todo, despues lo hago*/
+#menu.show{
+display:block;
+  max-height: 90vh;     
+  opacity: 1;           
 }
-
-.distros-cards-tittle h1 {
-  /*CAMBIAR*/
-  width: 880px;
-  font-size: 30px;
-  color: red;
+#menu-toggle{
+  user-select: none;
 }
-
-.distro-card h1 {
-  width: 25rem;
-  padding: 20px;
-  font-size: 1.4rem;
-  color: white;
-}
-
-.distros-cards-container {
-  width: 76rem;
-  height: 59rem;
-  margin-left: 3.7rem;
-  display: flex;
-  flex-direction: row;
-  column-gap: 1.8rem;
-}
-
-.distros-column {
-  width: 37rem;
-  height: 100%;
+ul {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  row-gap: 2.5rem;
+  gap:0.3rem;
+}
+.header-menu{
+  border-radius:0.5rem;
+  margin-left:-3rem;
+  margin-top:1.6rem;
+  background:var(--primary-black);
+  width:30vh;
+  height:90vh;
+  z-index: 1;
+  transition:all 1s;
+}
+li{
+  all:unset;
+}
+/* fin del menu*/
+/*======DISTROS-CARDS======*/
+
+
+.distro-card h1 {
+  width: 3rem;
+  margin-left:1rem;
+  font-size: 0.8rem;
+  color: white;
 }
 
 .distro-card {
-  height: 23rem;
+  margin-left:-1.7rem;
+  margin-top:0.5rem;
+  height:3.5rem;
+  width:13rem;
   color: white;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
 .distro-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .debian-card,
@@ -148,12 +150,12 @@ html {
 .kali-card,
 .zorin-card {
   height: 100%;
-  width: 100%;
+  width: 80%;
 
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 0.9rem;
+  border-radius: 0.5rem;
   /* 15px */
 }
 
@@ -194,21 +196,15 @@ html {
 .mint-card img,
 .fedora-card img,
 .arch-card img,
-.manjaro-card img {
-  width: 8.125rem;
-  /* 130px */
-  height: auto;
-  object-fit: contain;
-}
-
+.manjaro-card img,
 .kali-card img,
 .zorin-card img {
-  width: 12.5rem;
-  /* 200px */
-  height: auto;
+  width: 8.125rem;
+  /* 130px */
+  height: 3rem;
   object-fit: contain;
+  margin-left:2rem;
 }
-
 /*======DISTROS-CARDS======*/
 
 /*======INFO-LINUX======*/
@@ -314,13 +310,13 @@ html {
   padding: 8px;
   margin-top: 10px;
   transition: transform 0.2s ease;
-
+  user-select:none;
 }
 
 .command:hover {
   box-shadow: 0 0.13rem 0.63rem #000;
-  transform: translateY(-5px);
   cursor: pointer;
+  transform: translateY(-5px);
 
 }
 
@@ -340,40 +336,6 @@ html {
 
 
 /*======COMANDOS BASICOS LINUX======*/
-
-/*======ARROW UPWARD======*/
-
-.arrow-upward {
-  position: fixed;
-  z-index: 1000;
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 20px;
-  cursor: pointer;
-  box-shadow: 0 0.13rem 0.63rem #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.arrow-upward a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.arrow-upward:hover {
-  box-shadow: 0 0.13rem 0.63rem #000;
-  transform: translateY(-5px);
-}
-
-/*======ARROW UPWARD======*/
 
 /* =====FOOTER===== */
 footer {
