@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=south" />
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/body.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="shortcut icon" href="./images/linux-logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linuxpedia</title>
+</head>
+
+<body>
+
+  <!---HEADER--->
+  <header>
+
+    <div class="header-container">
+      <div class="header-box-logo">
+        <img src="./images/linux-logo.png" alt="header-box-logo">
+        <h1>Linuxpedia</h1>
+      </div>
+
+      <div class="header-container-options">
+        <div class="options">
+          <a href="./index.html" class="tittle">
+            Inicio
+          </a>
+        </div>
+        <div class="options">
+          <a href="#commands" class="tittle">
+            Comandos
+          </a>
+        </div>
+        <div class="options">
+          <div class="options">
+  <div id="menu-toggle">
+    Distribuciones
+  </div>
+
+  <div id="menu-active">
+    <nav id="menu" class="header-menu">
+      <ul>
+        <li>
+          <div class="distro-card">
+            <div class="kali-card" onclick="window.location.href='https://www.kali.org/'">
+              <h1>Kali</h1>
+              <img src="./images/distros-logos/kali_logo.png" alt="kali-logo">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="distro-card">
+            <div class="ubuntu-card" onclick="window.location.href='https://ubuntu.com/'">
+              <h1>Ubuntu</h1>
+              <img src="./images/distros-logos/Ubuntu_logo.png" alt="ubuntu-logo">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="distro-card">
+            <div class="debian-card" onclick="window.location.href='https://www.debian.org/index.es.html'">
+              <h1>Debian</h1>
+              <img src="./images/distros-logos/Debian_logo.png" alt="debian-logo">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="distro-card">
+            <div class="mint-card" onclick="window.location.href='https://linuxmint.com/'">
+              <h1>Mint</h1>
+              <img src="./images/distros-logos/Mint_logo.png" alt="mint-logo">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="distro-card">
+            <div class="fedora-card" onclick="window.location.href='https://fedoraproject.org/es/'">
+              <h1>Fedora</h1>
+              <img src="./images/distros-logos/Fedora_logo.png" alt="fedora-logo">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="distro-card">
+            <div class="arch-card" onclick="window.location.href='https://archlinux.org/'">
+              <h1>Arch</h1>
+              <img src="./images/distros-logos/Arch_logo.png" alt="arch-logo">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="distro-card">
+            <div class="manjaro-card" onclick="window.location.href='https://manjaro.org/'">
+              <h1>Manjaro</h1>
+              <img src="./images/distros-logos/Manjaro_logo.png" alt="manjaro-logo">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="distro-card">
+            <div class="zorin-card" onclick="window.location.href='https://zorin.com/os/'">
+              <h1>Zorin OS</h1>
+              <img src="./images/distros-logos/zorin_logo.png" alt="zorin-logo">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+</div>
+
+      </div>
+
+    </div>
+     <script src="js/menu.js"></script>
+  </header>
+  <!---HEADER--->
+
+  <!----MAIN---->
+
+  <main>
+    <!--LINUXPEDIA INTRODUCTION-->
+    <section class="linuxpedia-intro">
+      <div class="introduct">
+        <p>
+          Linuxpedia
+        </p>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="banner-text">
+        <h1>¿Que es Linux?</h1>
+        <p>
+          Linux® es un sistema operativo (SO) open source que creó Linus Torvalds en 1991. Gracias a su comunidad
+          internacional de aficionados, hoy podemos encontrarlo en todo tipo de dispositivos, desde sistemas de puntos
+          de
+          venta hasta las supercomputadoras más potentes del mundo.
+        </p>
+
+        <button class="banner-text-btn">
+          Leer mas...
+        </button>
+      </div>
+
+      <div class="banner-logo">
+        <img src="./images/LinuxTux.png" alt="Tux">
+      </div>
+
+    </section>
+    <!--INFORMACION SOBRE LINUX-->
+
+    <section class="info-linux">
+      <div class="info-linux-tittle">
+        <h2>Más información sobre Linux</h2>
+      </div>
+      <p>
+        Linux no es un sistema operativo completo, sino un <strong>núcleo (kernel)</strong> sobre el cual se construyen
+        distintas distribuciones.
+        Es libre, estable y ampliamente utilizado en servidores, computadoras personales y sistemas embebidos.
+      </p>
+
+      <div class="info-cards">
+        <div class="card">
+          <h3>Código Abierto</h3>
+          <p>El código fuente es libre, permitiendo a cualquiera estudiarlo, modificarlo o distribuirlo.</p>
+        </div>
+
+        <div class="card">
+          <h3>Distribuciones</h3>
+          <p>Existen múltiples variantes como Ubuntu, Debian, Fedora, Arch y muchas más.</p>
+        </div>
+
+        <div class="card">
+          <h3>Seguridad</h3>
+          <p>La arquitectura de permisos y comunidad activa lo hacen muy seguro por diseño.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--BASIC COMMANDS-->
+
+    <section id="commands"  class="commands-intro">
+      <div class="introduct">
+        <p>
+          Comandos basicos de linux
+        </p>
+      </div>
+    </section>
+
+    <section class="basic-commands">
+
+      <div class="command">
+        <h2>Change directory(cd)</h2>
+        <div class="command-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.</p>
+          <img src="./images/commands-examples/CD.png" alt="ls">
+        </div>
+      </div>
+
+      <div class="command">
+        <h2>
+          Print Working Directory(pwd)
+        </h2>
+        <div class="command-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.
+          </p>
+          <img src="./images/commands-examples/PWD.png" alt="pwd">
+        </div>
+      </div>
+
+      <div class="command">
+        <h2>List(ls)</h2>
+        <div class="command-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.</p>
+          <img src="./images/commands-examples/LS.png" alt="ls">
+        </div>
+      </div>
+
+      <div class="command">
+        <h2>Make directory(mkdir)</h2>
+        <div class="command-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.</p>
+          <img src="./images/commands-examples/MKDIR.png" alt="mkdir">
+        </div>
+      </div>
+
+      <div class="command">
+        <h2>touch</h2>
+        <div class="command-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+          <img src="./images/commands-examples/TOUCH.png" alt="touch">
+        </div>
+      </div>
+
+      <div class="command">
+        <h2>Copy(cp)</h2>
+        <div class="command-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.</p>
+          <img src="./images/commands-examples/CP.png" alt="cp">
+        </div>
+      </div>
+
+      <div class="command">
+        <h2>Remove(rm)</h2>
+        <div class="command-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.</p>
+          <img src="./images/commands-examples/RM.png" alt="rm">
+        </div>
+      </div>
+
+      <div class="command">
+        <h2>Move(mv)</h2>
+        <div class="command-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.</p>
+          <img src="./images/commands-examples/MV.png" alt="mv">
+        </div>
+      </div>
+
+      <div class="command">
+        <h2>cat</h2>
+        <div class="command-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.</p>
+          <img src="./images/commands-examples/CAT.png" alt="cat">
+        </div>
+      </div>
+
+      <div class="command">
+        <h2>sudo</h2>
+        <div class="command-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.</p>
+          <img src="./images/commands-examples/SUDO.png" alt="sudo">
+        </div>
+      </div>
+
+    </section>
+
+    <!--BASIC COMMANDS-->
+
+    <!--INFORMACION SOBRE LINUX-->
+
+  </main>
+  <!----MAIN---->
+
+  <footer>
+
+    <div class="titulo-footer">
+      <p>Linuxpedia</p>
+    </div>
+
+    <div class="container-footer">
+
+      <div class="columns">
+        <div class="column-tittle">
+          Contactos
+        </div>
+        <div class="block-info">
+          <div class="info-box">
+            Call: +01 1234567890
+          </div>
+          <div class="info-box">
+            support@linuxpedia.org
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column-tittle">
+          Recursos Linux
+        </div>
+        <p>
+          <a href="#" style="color: #fff; text-decoration: none;">Distribuciones Populares</a><br>
+          <a href="#" style="color: #fff; text-decoration: none;">Tutoriales Bash</a><br>
+          <a href="#" style="color: #fff; text-decoration: none;">Guía de Comandos</a><br>
+          <a href="#" style="color: #fff; text-decoration: none;">Foros de Soporte</a>
+        </p>
+      </div>
+
+      <div class="columns">
+        <div class="column-tittle">
+          Comunidad
+        </div>
+        <p>
+          ¡Únete a nuestra comunidad open source!<br>
+          IRC: #linuxpedia<br>
+          GitHub: /linuxpedia<br>
+          Reddit: r/linux
+        </p>
+      </div>
+
+      <div class="columns">
+        <div class="column-tittle">
+          Newsletter
+        </div>
+        <input type="text" placeholder="Ingresa tu email">
+        <input type="submit" value="SUSCRIBIRME">
+      </div>
+
+    </div>
+
+    <div class="copyrigth">
+      <p>© 2025 Linuxpedia. Código abierto, conocimiento libre.</p>
+    </div>
+
+  </footer>
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+
+</html>
